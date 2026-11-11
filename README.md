@@ -2,7 +2,11 @@
 
 Aplikasi web untuk menyusun jadwal shift karyawan proyek konstruksi secara otomatis dengan **optimasi multi-objektif**, lengkap dengan presensi berbasis lokasi dan face recognition.
 
-Dibangun dengan Laravel 12 sebagai implementasi praktis dari Tugas Akhir (Skripsi) Teknik Informatika, Universitas Mercu Buana.
+Sistem ini terdiri dari dua bagian utama dengan konteks pengerjaan yang berbeda:
+- **Sistem presensi**: dikembangkan sebagai tugas saat magang di PT. Asfak Jaya Construction.
+- **Sistem penjadwalan berbasis algoritma optimasi**: dikembangkan sebagai Tugas Akhir (Skripsi) Teknik Informatika, Universitas Mercu Buana.
+
+Keduanya dibangun dengan Laravel 12. Rincian pembagiannya ada di [Peran Saya](#peran-saya).
 
 > **Catatan akses:** repositori publik ini hanya berisi dokumentasi. Kode sumber lengkap tidak dipublikasikan dan tersedia untuk pemegang lisensi. Lihat [Akses & Lisensi](#akses--lisensi).
 
@@ -134,13 +138,13 @@ Semua data yang terlihat di screenshot adalah data contoh (fiktif).
 
 ## Peran Saya
 
-Project ini dikembangkan dari sistem informasi yang dibuat bersama tim magang di PT. Asfak Jaya Construction (modul akuntansi, inventory, penjualan, mutasi gudang, retur, company profile, dan hak akses).
+| Bagian | Konteks pengerjaan | Dikembangkan oleh |
+| --- | --- | --- |
+| **Sistem penjadwalan berbasis algoritma**: PBO-HGLSA, NSGA-II, baseline Random, job queue dan monitoring optimasi, kebutuhan pekerja per lokasi, konfigurasi parameter dan batasan, matriks jadwal, export Excel | Tugas Akhir (Skripsi) | Saya |
+| **Sistem presensi**: API presensi dengan validasi GPS, face recognition, pengajuan dan persetujuan izin/cuti, rekap presensi | Tugas magang | Saya |
+| **Modul sistem informasi lainnya**: akuntansi, inventory, penjualan, mutasi gudang, retur, company profile, hak akses | Project magang | Tim magang |
 
-Bagian yang saya kembangkan:
-- Algoritma optimasi PBO-HGLSA, NSGA-II, dan baseline Random, beserta job queue dan halaman monitoringnya.
-- Modul penjadwalan: matriks jadwal, kebutuhan per lokasi, konfigurasi parameter dan batasan, serta export Excel.
-- Modul presensi: API presensi, validasi lokasi, integrasi face recognition, izin dan cuti, serta rekap.
-- Migration dan seeder data contoh.
+Migration dan seeder data contoh untuk sistem penjadwalan dan presensi juga saya buat.
 
 ---
 
